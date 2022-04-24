@@ -1,0 +1,2 @@
+driverName: mysql
+dataSourceName: root:qwe123@tcp(127.0.0.1:3306)/test?charset=utf8

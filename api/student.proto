@@ -1,0 +1,28 @@
+syntax = "proto3";  //语法声明
+
+package api; //包名
+//生成pb  protoc --go_out=. student.proto
+//        protoc --go-grpc_out=. student.proto
+// 输出到当前目录
+option go_package="../api";
+
+
+// hello服务（可定义多个服务,每个服务可定义多个方法）
+service Greeter {
+  // hello服务的入口
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// 定义发送请求信息.
+message HelloRequest {
+  // 定义发送的参数
+  // 参数类型 参数名 标识号(不可重复)
+  string name = 1;
+}
+
+// 定义响应信息
+message HelloReply {
+  string message = 1;
+}
+
+
