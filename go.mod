@@ -17,6 +17,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	go.etcd.io/etcd/client/v3 v3.5.2
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+	golang.org/x/time v0.0.0-20220922220347-f3bd1da661af // indirect
 	google.golang.org/genproto v0.0.0-20211223182754-3ac035c7e7cb // indirect
 	google.golang.org/grpc v1.43.0
 	google.golang.org/protobuf v1.27.1
